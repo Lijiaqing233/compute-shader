@@ -32,8 +32,10 @@ public class GpuParticle : MonoBehaviour{
         Particle[] particles= new Particle[N];
         for (int i = 0; i < N; i++)
         {
-           
-                particles[i].position = new Vector3(Random.value  * Mathf.PI, Random.value  * Mathf.PI, Random.value  * Mathf.PI);
+               double a = Random.value * Mathf.PI;
+               double r = Mathf.Sqrt(Random.value) * 0.3;
+               
+               particles[i].position = new Vector3(Mathf.Cos((float)a) * (float)r, Mathf.Sin((float)a) * (float)r, 0);
                 particles[i].v = new Vector3(0, 0, 0);
                 particles[i].a = new Vector3(0, 0, 0);
                 particles[i].color = new Vector3(1, 1, 1);
@@ -41,7 +43,7 @@ public class GpuParticle : MonoBehaviour{
 
         ComputeBuffer computeBuffer = new ComputeBuffer(N, 48);
         ParticleBuffer = computeBuffer;
-        ParticleBuffer.SetData(particles);   //使用数组中的值设置该缓冲区
+        ParticleBuffer.SetData(particles);   
 
         _args = new uint[5] { 0, 0, 0, 0, 0 };
         argsBuffer = new ComputeBuffer(1, _args.Length * sizeof(uint), ComputeBufferType.IndirectArguments);
@@ -60,14 +62,14 @@ public class GpuParticle : MonoBehaviour{
         updatebuffer();
         argsBuffer.SetData(_args);
         Graphics.DrawMeshInstancedIndirect(Particle_Mesh,0, _material, new Bounds(Vector3.zero, new Vector3(100f, 100f, 100f)), argsBuffer);
-    }   //要绘制的网格/要绘制网格的哪个子集/使用的材料/打算绘制的实例周围的边界体积/GPU缓冲区，包含要绘制此网格的多少个实例的参数
+    }   
 
 
     void updatebuffer()
     {
-        int kernelId = _computeShader.FindKernel("MainCS");  //找到计算shader
-        _computeShader.SetFloat("_Time", time);  //传入参数time
-        _computeShader.SetBuffer(kernelId, "_ParticleBuffer", ParticleBuffer);  //设置计算shader的缓存
+        int kernelId = _computeShader.FindKernel("MainCS");  
+        _computeShader.SetFloat("_Time", time);  
+        _computeShader.SetBuffer(kernelId, "_ParticleBuffer", ParticleBuffer);  
         _computeShader.Dispatch(kernelId, blockPerGrid, 1, 1);
         _args[0] = (uint)Particle_Mesh.GetIndexCount(0);  //36
         _args[1] = (uint)N;

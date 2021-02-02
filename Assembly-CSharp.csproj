@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F00A62AF-A306-FAD5-A905-5F5259ADF821}</ProjectGuid>
+    <ProjectGuid>{B0FD5535-FC70-A3F3-E09E-A4E11F61FD8A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -251,7 +251,7 @@
       <HintPath>D:/unity/2019.4.16f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:/unity/2019.4.16f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -599,58 +599,58 @@
       <HintPath>D:/unity/2019.4.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
-      <HintPath>E:/Unity-Morph-Image-based-on-Gpu-particle-master/Unity-Morph-Image-based-on-Gpu-particle-master/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+      <HintPath>C:/Users/85707/OneDrive/文档/compute-shader/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
