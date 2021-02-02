@@ -67,7 +67,6 @@
     <Compile Include="Assets\CS_Particle\Script\GpuParticle.cs" />
     <None Include="Assets\CS_Particle\Shader\particle.shader" />
     <None Include="Assets\CS_Particle\Shader\particleCS.compute" />
-    <None Include="Assets\CS_Particle\Shader\SimplexNoise3D.cginc" />
     <Reference Include="UnityEngine">
       <HintPath>D:/unity/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
