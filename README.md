@@ -1,4 +1,4 @@
-# Unity-Morph-Image-based-on-Gpu-particle
-Unity Morph Image based on Gpu particle  
+# compute shaderを用いるNbodyシミュレーション
+
 
 ![gif](https://github.com/Lijiaqing233/compute-shader/blob/main/compute_shader.gif)
