@@ -1,4 +1,4 @@
-# compute shaderを用いるNbodyシミュレーション（制作中）
+# compute shaderを用いるNbodyシミュレーション
 
 
 ![gif](https://github.com/Lijiaqing233/compute-shader/blob/main/gpgpu.gif)
