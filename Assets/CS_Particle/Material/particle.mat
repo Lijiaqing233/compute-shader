@@ -77,7 +77,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Ratio: 1
-    - _Size: 0.002
+    - _Size: 0.01
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _Speed: 1.5

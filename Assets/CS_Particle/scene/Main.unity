@@ -153,11 +153,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d676b60b16a63440bdfdad4e3e3f8ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  use_GPU: 1
   lerpt: 0.092
   size: 0.01
   Particle_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
   _computeShader: {fileID: 7200000, guid: 1fd264c8809a94ce294c0ffb2d7a9672, type: 3}
-  _material: {fileID: 2100000, guid: 4f69a34821300be409a9cc52aeb520d1, type: 2}
+  _material: {fileID: 2100000, guid: c2c03a58be283481d91903581a5a29bd, type: 2}
 --- !u!64 &413893075
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -370,7 +371,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.34999108, g: 0.47119093, b: 0.5188679, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -411,7 +412,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012778627}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.63, y: 0, z: -3.65}
+  m_LocalPosition: {x: 15.63, y: 0, z: -10.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

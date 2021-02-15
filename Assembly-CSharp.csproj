@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CS_Particle\Script\GpuParticle.cs" />
+    <None Include="Assets\CS_Particle\Shader\cpu.shader" />
     <None Include="Assets\CS_Particle\Shader\particle.shader" />
     <None Include="Assets\CS_Particle\Shader\particleCS.compute" />
     <Reference Include="UnityEngine">

@@ -19,38 +19,40 @@ void MainCS(uint3 id : SV_DispatchThreadID)
 {
     //_ParticleBuffer[id.x].v = _ParticleBuffer[id.x].a * 2;
     //_ParticleBuffer[id.x].position += _ParticleBuffer[id.x].v * 0.01;
-    float3 r;
-    float3 p = _ParticleBuffer[id.x].position;
+   float  Soften = 1e-6;
+    float rx, ry, rz;
+    float dist2, dist6, invDist3, s;
+    float dt = 0.0001;
     
-    float G = -1e1;
-    float eps = 1e-3;
-    float dt =1e-5;
-    for (int i = 0; i < 2560; ++i)
-    {
-        
-        if (id.x != i)
-        {
-            r.x = p.x - _ParticleBuffer[i].position.x;
-            r.y = p.y - _ParticleBuffer[i].position.y;
-            
-            float x = 0.05 / (sqrt(r.x * r.x + r.y * r.y) );
-            
-            _ParticleBuffer[id.x].a.x += eps  * (pow(x, 13) - pow(x, 7)) * r.x;
-            _ParticleBuffer[id.x].a.x += G  * pow(x, 3) * r.x;
-            
-            _ParticleBuffer[id.x].a.y += eps  * (pow(x, 13) - pow(x, 7)) * r.y;
-            _ParticleBuffer[id.x].a.y += G  *  pow(x, 3) * r.y;
-            
-           // _ParticleBuffer[id.x].a += -GM / pow(x, 3) * float3(0.01, 0.01, 0.01);
-        }
+    
+  float3 r;
+  float3 p = _ParticleBuffer[id.x].position;
+ 
+    _ParticleBuffer[id.x].a.x = 0;
+
+    _ParticleBuffer[id.x].a.y = 0;
+    
+ for (uint j = 0; j < 16384; ++j)
+ {   
+        if (j==id.x)
+            continue;
+        rx = _ParticleBuffer[j].position.x - _ParticleBuffer[id.x].position.x;
+        ry = _ParticleBuffer[j].position.y - _ParticleBuffer[id.x].position.y;
+      
+      dist2 = rx * rx + ry * ry + Soften;
+      dist6 = dist2 * dist2 * dist2;
+      invDist3 = 1.0 / sqrt(dist6);
+        _ParticleBuffer[id.x].a.x = _ParticleBuffer[id.x].a.x + rx * invDist3;
+        _ParticleBuffer[id.x].a.y = _ParticleBuffer[id.x].a.y + ry * invDist3;
     }
-              
+   
     
-    _ParticleBuffer[id.x].v.x += _ParticleBuffer[id.x].a.x * dt;
-    _ParticleBuffer[id.x].v.y += _ParticleBuffer[id.x].a.y * dt;
-    
-    _ParticleBuffer[id.x].position.x += _ParticleBuffer[id.x].v.x * dt;
-    _ParticleBuffer[id.x].position.y += _ParticleBuffer[id.x].v.y * dt;
-    //_ParticleBuffer[id.x].position = r * float3(0.01, 0.01, 0.01);
+    _ParticleBuffer[id.x].position.x = _ParticleBuffer[id.x].position.x + _ParticleBuffer[id.x].v.x * dt;
+    _ParticleBuffer[id.x].position.y = _ParticleBuffer[id.x].position.y + _ParticleBuffer[id.x].v.y * dt;
+   
+    _ParticleBuffer[id.x].v.x = _ParticleBuffer[id.x].v.x + _ParticleBuffer[id.x].a.x * dt;
+    _ParticleBuffer[id.x].v.y = _ParticleBuffer[id.x].v.y + _ParticleBuffer[id.x].a.y * dt;
+  
+  // //_ParticleBuffer[id.x].position = r * float3(0.01, 0.01, 0.01);
 
 }
